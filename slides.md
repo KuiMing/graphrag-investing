@@ -501,6 +501,22 @@ graphrag query --method global --query "你的問題" --root ./你的資料夾
     - 需要細節的問題
     - It is well-suited for answering questions that require an understanding of specific entities mentioned in the input documents
 
+----
+
+## 花費的 token
+
+![](media/token.png)
+
+----
+
+## 費用
+- text-embedding-3-small
+  - $0.020 / 1M tokens
+- gpt-4o-mini
+  - $0.150 / 1M input tokens
+  - $0.600 / 1M output tokens
+- 一份財報的 GraphRAG 大約花費： 0.1~0.15 USD
+
 ---
 
 
