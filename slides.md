@@ -1,7 +1,8 @@
-# 投資書僮進化中～GraphRAG！
+
+<!-- .slide: data-background="media/cover.png" -->
+
+# 投資書僮進化中～`GraphRAG`！
  
-
-
 2024/12/14 陳奎銘 Ben 
 
 
@@ -108,10 +109,13 @@
 
 <!-- .slide: data-background-iframe="media/RAG.html" -->
 
+----
+
+## RAG：讓 GPT 看書找答案
 
 ----
 
-# GraphRAG
+# `GraphRAG`
 
 ----
 
@@ -135,6 +139,11 @@
 
 
 <!-- .slide: data-background="media/community.png" -->
+
+----
+
+
+<!-- .slide: data-background-iframe="https://www.ftvnews.com.tw/news/detail/2019522L10M1" -->
 
 ----
 
@@ -567,15 +576,32 @@ graphrag query --method global --query "你的問題" --root ./你的資料夾
 
 ----
 
+# 富貴險中求
+
+----
+
+# 也在險中丟
+
+
+----
+
+![](media/fake_index.jpg)
+
+
+----
+
+
+
 ## 投資書僮補完計畫
 - 針對每月被挑出的股票，用 GraphRAG 產出『財報造假』指數
 - 指數超出 50 便應該考量是否該進場
 - 若冒險進場，從高處下降 10% 以上，便直接出場
 
+
 ----
 
 ## 投影片
-![](media/qrcode.png)
+![](media/qr.png)
 
 ----
 
