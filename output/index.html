@@ -481,7 +481,7 @@ GraphRAG Workflow From Microsoft
                   <textarea data-template>
                     
 
-- 特朗普發起的貿易戰對亞洲經濟產生了顯著影響，特別是那些依賴對美國出口的國家。例如，台灣和韓國正努力應對加徵關稅和貿易限制帶來的挑戰，這些挑戰威脅到了它們的經濟穩定與增長前景。此情況突顯了全球貿易的相互依存性以及美國政策對區域經濟的影響。 [Data：Relationships (43, 2)]
+- 川普發起的貿易戰對亞洲經濟產生了顯著影響，特別是那些依賴對美國出口的國家。例如，台灣和韓國正努力應對加徵關稅和貿易限制帶來的挑戰，這些挑戰威脅到了它們的經濟穩定與增長前景。此情況突顯了全球貿易的相互依存性以及美國政策對區域經濟的影響。 [Data：Relationships (43, 2)]
 
 
                   </textarea>
@@ -777,7 +777,8 @@ global_search:
 ```
 - 例如：要求用繁體中文
 ```
-Return output in Traditional Chinese as a single list of all the entities and relationships
+Return output in Traditional Chinese as a single list of 
+all the entities and relationships
 ```
 
 
@@ -807,10 +808,12 @@ python -m graphrag.index --root ./你的資料夾
 ## `Global\Local Search`
 
 ```bash
-python3 -m graphrag.query --root ./你的資料夾 --method global "你的問題"
+python3 -m graphrag.query --root ./你的資料夾 \
+        --method global "你的問題"
 ```
 ```bash
-python3 -m graphrag.query --root ./你的資料夾 --method local "你的問題"
+python3 -m graphrag.query --root ./你的資料夾 \
+        --method local "你的問題"
 ```
 
 
@@ -826,8 +829,10 @@ python3 -m graphrag.query --root ./你的資料夾 --method local "你的問題"
 ```bash
 graphrag init --root ./ragtest
 graphrag index --root ./ragtest
-graphrag query --method local --query "你的問題" --root ./你的資料夾
-graphrag query --method global --query "你的問題" --root ./你的資料夾
+graphrag query --root ./你的資料夾 --method local \
+                --query "你的問題" 
+graphrag query --root ./你的資料夾 --method global \
+                --query "你的問題" 
 ```
 
 
